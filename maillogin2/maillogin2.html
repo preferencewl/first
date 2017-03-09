@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>邮箱登录界面</title>
+	<link rel="stylesheet" type="text/css" href="maillogin2.css">
+</head>
+<body onload="createCode()">
+<div class="content">
+	<div class="nav">
+		<img src="images/skytech.png">
+		<ul>
+			<li><a href="http://www.skytech.cn" target="_blank">首页</a></li>
+			<li><a href="http://www.skytech.cn/gytq/gsjs/" target="_blank">关于我们</a></li>
+			<li><a href="http://www.skytech.cn/gytq/lxwm/" target="_blank">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="background">
+		<div class="nav1">
+			
+		</div>
+		<p class="title">互联网营销领跑者</p>
+		<p class="title2">以客户为中心，其他一切纷至沓来</p>
+		<div class="login-form">
+			<p class="sys-login">系统登录 | System Login</p>
+			<form class="form">
+				<p class="email-address"><img src="images/user-img.png"><input type="email" name="email-address" placeholder="邮箱地址"></p>
+				<p  class="pwd"><img src="images/pwd-img.png"><input type="password" name="pwd" placeholder="密码"></p>
+				<!-- <input class="verifi" id="veri" type="text" name="verification-code" placeholder="验证码"> 
+				<input readonly="true" type="button" name="code" class="code" id="code" onclick="createCode()"> -->
+				<input class="sub" type="submit" name="sub" value="登陆">
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<p class="help"><a href="http://www.skytech.cn/mail/help/foxmailsetup.doc" target="_blank">foxmail设置帮助</a> | <a href="http://www.skytech.cn/mail/help/outlooksetup.doc" target="_blank">outlook设置帮助</a> | <a href="http://www.skytech.cn/mail/" target="_blank">企业邮箱</a> | <a href="http://www.263.net/" target="_blank">管理员登录</a> | 使用手册下载 <img class="trusted-website" src="images/trusted-website.png"></p>
+		<p class="tel">联系电话：400-620-8365</p>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	var code ; //在全局定义验证码   
+	//产生验证码  
+	function createCode(){  
+	     code = "";   
+	     var codeLength = 4;//验证码的长度  
+	     var checkCode = document.getElementById("code");   
+	     var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+	     'S','T','U','V','W','X','Y','Z');//随机数  
+	     for(var i = 0; i < codeLength; i++) {//循环操作  
+	        var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）  
+	        code += random[index];//根据索引取得随机数加到code上  
+	    }  
+	    checkCode.value = code;//把code值赋给验证码  
+	}
+</script>
+<script>
+    (function(win,doc){
+        var oHtml = doc.querySelector("html");
+        function setFontSize (){
+            var oWidth = document.body.clientWidth;
+            oHtml.style.fontSize = oWidth/19.2 + "px";
+        };
+        setFontSize();
+        win.addEventListener("resize",setFontSize,false);
+    })(window,document);
+</script>

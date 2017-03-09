@@ -1,0 +1,181 @@
+/*初始化s*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*初始化e*/
+/* 内容s */
+.content{
+    width: 19.2rem;
+    height: 100%;
+}
+.nav{
+    width: 19.2rem;
+    height: .95rem;
+    background-color: #3a3a3a;
+    margin-bottom: -.01rem;
+}
+.nav1{
+    width: 19.2rem;
+    height: .03rem;
+    background-color: #3a3a3a;
+}
+.nav img{
+    width: 2.35rem;
+    margin-bottom: .2rem;
+    margin-left: .6rem;
+}
+.nav ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 1rem;
+    margin-top: .3rem;
+}
+.nav ul li{
+    float: left;
+    font-size: .2rem;
+    font-family: "Microsoft Yahei";
+    color: white;
+    width: 1.5rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+}
+.nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+.background{
+    width: 19.2rem;
+    height: 7rem;
+    background: url(images/bg-img.png) no-repeat;
+}
+.title{
+    font-size: .8rem;
+    font-family: "华文行楷";
+    color: white;
+    padding-left:3.4rem;
+    padding-top: 2.5rem;
+}
+.title2{
+    font-size: .18rem;
+    font-family: "Microsoft Yahei";
+    padding-left: 4.6rem;
+    color: white;
+    letter-spacing: .1rem;
+}
+.login-form{
+    width: 3.25rem;
+    height: 4rem;
+    float: right;
+    margin-top: -2.5rem;
+    background-color: #444444;
+    opacity: .9;
+    margin-right: 3rem;
+}
+.sys-login{
+    font-size: .2rem;
+    font-family: "黑体";
+    color: white;
+    text-align: center;
+    padding-top: .2rem;
+}
+.form{
+    width: 100%;
+    height: 100%;
+}
+.email-address,.pwd{
+    width: 3rem;
+    height: .6rem;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: .3rem;
+    background-color: #313233;
+}
+.email-address img,.pwd img{
+    width: .3rem;
+    float: left;
+    margin-top: .15rem;
+    margin-left: .1rem;
+}
+.email-address input,.pwd input{
+    width: 2.5rem;
+    float: right;
+    height: 100%;
+    background-color: #313233;
+    border: none;
+    border-left: 1px solid grey;
+    color: white;
+}
+.verifi{
+    width: 1rem;
+    height: .5rem;
+    background-color: #313233;
+    border: none;
+    display: block;
+    margin-left: .1rem;
+    margin-top: .3rem;
+    color: white;
+}
+.sub{
+    width: 3rem;
+    height: .5rem;
+    color: white;
+    background-color: #029eff;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: .3rem; 
+    letter-spacing: .2rem;  
+    padding-left: .2rem;
+}
+.code{
+    display: block;
+    float: right;
+    margin-top: -.5rem;
+    margin-right: .9rem;
+    width: 1rem;
+    height: .5rem;
+    border: none;   
+}
+.help,.tel{
+    font-size: .14rem;
+    color: #4f4f4f;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+}
+.help{
+   padding-top: .5rem; 
+}
+.help a{
+    text-decoration: none;
+    color: #4f4f4f;
+}
+.tel{
+    padding-top: .2rem;
+}
+.trusted-website{
+    width: .5rem;
+    margin-left: .3rem;
+}
+/* 内容e */
